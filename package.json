@@ -1,0 +1,50 @@
+{
+  "name": "my-publish-app",
+  "productName": "my-publish-app",
+  "version": "1.0.1",
+  "description": "My Electron application description",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "builder": "electron-builder",
+    "lint": "echo \"No linting configured\""
+  },
+  "repository": "https://github.com/goratoyan/updater",
+  "publish": {
+    "provider": "github",
+    "releaseType": "release"
+  },
+  "build": {
+    "appId": "com.coderjet.asdasd",
+    "productName": "my-publish-app",
+    "win": {
+      "target": "nsis"
+    },
+    "directories": {
+      "output": "dist"
+    }
+  },
+  "keywords": [],
+  "author": {
+    "name": "robatoyan",
+    "email": "142260538+robatoyan@users.noreply.github.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0",
+    "electron-updater": "^6.1.7"
+  },
+  "devDependencies": {
+    "electron-builder": "^24.9.1",
+    "@electron-forge/cli": "^7.2.0",
+    "@electron-forge/maker-deb": "^7.2.0",
+    "@electron-forge/maker-rpm": "^7.2.0",
+    "@electron-forge/maker-squirrel": "^7.2.0",
+    "@electron-forge/maker-zip": "^7.2.0",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.2.0",
+    "electron": "28.0.0"
+  }
+}
